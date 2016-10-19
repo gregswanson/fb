@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
 	<title>FB Developer</title>
-	<!-- Bootstrap CSS 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
@@ -26,24 +28,24 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <!-- Facebook SDK End -->
+<div class="container-fluid">
+	<div class="row text-center">
+		<h1>This is how it will appear on the page</h1>
+		<p id="text">This box can only scale from 180px to 500px</p>
 
-<h1>This is the first option</h1>
+		<div id="fb">
 <!-- Facebook Script Start -->
-
-<div class="fb-page" data-href="https://www.facebook.com/WayneHoeyStudio/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/WayneHoeyStudio/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WayneHoeyStudio/">Wayne Hoey</a></blockquote></div>
-
-
+			<div class="fb-page" 
+			data-href="https://www.facebook.com/WayneHoeyStudio/" 
+			data-tabs="timeline,events,messages" 
+			data-small-header="false" 
+			data-adapt-container-width="true" 
+			data-width="500" data-hide-cover="false" 
+			data-show-facepile="false"><blockquote cite="https://www.facebook.com/WayneHoeyStudio/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/WayneHoeyStudio/">Wayne Hoey</a></blockquote></div>
 <!-- Facebook Script End -->
-
-<h2>Option 2</h2>
-
-<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FWayneHoeyStudio%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=561508974044316" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-
-
-
-
-
-
+		</div>
+	</div>
+</div>
 
 <!-- JS -->
 <script type="text/javascript" src="app.js"></script>
